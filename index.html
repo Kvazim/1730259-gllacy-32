@@ -19,6 +19,7 @@
             <a class="main-nav-link" href="#">Каталог</a>
             <ul class="main-nav-submenu">
               <li class="submenu-item new-submenu">
+                <!--выбранному разделу добавлять клас submenu-link-current-->
                 <a href="#" class="submenu-link">Новинки</a>
               </li>
               <li class="submenu-item">
@@ -51,9 +52,51 @@
             <a class="user-nav-link nav-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <!--для открытия попапа добавить класс popup-search-activ-->
+            <div class="popup-search">
+              <div class="popup-search-content">
+                <button class="popup-button visually-hidden" tabindex="-1">Закрыть</button>
+                <form class="popup-search-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <p>
+                    <label for="search-form" class="visually-hidden">Поиск по сайту</label>
+                    <!--при ошибке клас error-->
+                    <input type="text" class="search-form" name="search-form" id="search-form"
+                      placeholder="Поиск по сайту" required>
+                    <button class="popup-button-reset" type="reset"></button>
+                  </p>
+                  <button class="visually-hidden" type="submit">Поиск</button>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="user-nav-item item-log-in">
             <a class="user-nav-link log-in" href="#"><span class="visually-hidden">Вход в личный кабинет</span>Вход</a>
+            <!--Для открытия добавить клас popup-autр-activ-->
+            <div class="popup-autorizacion">
+              <div class="popup-autorizacion-content">
+                <button class="popup-button visually-hidden" tabindex="-1">Закрыть</button>
+                <h2 class="popup-autorizacion-title">Личный кабинет</h2>
+                <form class="popup-search-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="auth-group">
+                    <label class="email visually-hidden" for="email">Введите Ваш электронную почту</label>
+                    <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
+                      placeholder="email@example.com">
+                  </div>
+                  <div class="auth-group">
+                    <label class="password visually-hidden" for="email">Введите Ваш пароль</label>
+                    <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
+                      placeholder="Пароль">
+                  </div>
+                  <div class="auth-group auth-user-group">
+                    <button class="button button-red" type="submit">Войти</button>
+                    <div class="auth-user-option">
+                      <a href="#" class="auth-form-recovery">Забыли пароль?</a>
+                      <a href="#" class="auth-form-register">Регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="user-nav-item basket">
             <a class="user-nav-link basket-link" href="#"><span>Пусто</span><span class="visually-hidden">Корзина
