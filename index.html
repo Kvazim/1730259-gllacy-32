@@ -15,11 +15,11 @@
       <nav class="header-nav">
         <img class="header-logo" src="./images/logo.svg" width="137" height="56" alt="Глейси шоп">
         <ul class="main-nav disordered">
+          <!--выбранному разделу добавлять клас submenu-link-current-->
           <li class="main-nav-item">
-            <a class="main-nav-link" href="#">Каталог</a>
+            <a class="main-nav-link" href="catalog.html">Каталог</a>
             <ul class="main-nav-submenu">
               <li class="submenu-item new-submenu">
-                <!--выбранному разделу добавлять клас submenu-link-current-->
                 <a href="#" class="submenu-link">Новинки</a>
               </li>
               <li class="submenu-item">
@@ -261,7 +261,7 @@
                 малинового варенья бесплатно.</p>
               <a href="#" class="button button-white">Хочу подарок</a>
             </div>
-            <img class="special-item-img" src="./images/raspberry.png" alt="Малина в рожке" width="181" height="240px">
+            <img class="special-item-img" src="./images/raspberry.png" alt="Малина в рожке" width="181" height="240">
           </li>
           <li class="special-item marshmallow">
             <div class="special-item-text">
@@ -524,6 +524,34 @@
         <p class="footer-copyright">Сделано в <a class="copyright-link">.html academy</a> © 2021</p>
       </section>
     </footer>
+  </div>
+  <div class="modal-container">
+    <div class="modal feedback">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="modal-form-item">
+            <label class="visually-hidden" for="input-name">Введите ваше имя и фамилию</label>
+            <input type="text" class="modal-lable-input input-name" id="input-name" name="input-name"
+              placeholder="Имя и фамилия" required>
+          </p>
+          <p class="modal-form-item">
+            <label class="visually-hidden" for="input-email">Введите ваше имя и фамилию</label>
+            <input type="email" class="modal-lable-input input-email" id="input-email" name="input-email"
+              placeholder="email@example.com" required>
+          </p>
+          <p class="modal-form-item">
+            <label class="visually-hidden" for="input-question">Введите Ваш вопрос</label>
+            <textarea name="question" class="modal-lable-input input-question" id="input-question"
+              placeholder="В свободной форме" required></textarea>
+          </p>
+          <button class="button button-red modal-button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 

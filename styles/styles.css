@@ -361,7 +361,10 @@ body {
 .field:hover,
 .delivery-date-input:hover,
 .delivery-phone-input:hover,
-.delivery-address-input:hover {
+.delivery-address-input:hover,
+.input-name:hover,
+.input-email:hover,
+.input-question:hover {
   border: 1px solid #2d3440;
   cursor: pointer;
 }
@@ -371,7 +374,10 @@ body {
 .field:focus,
 .delivery-date-input:focus,
 .delivery-phone-input:focus,
-.delivery-address-input:focus {
+.delivery-address-input:focus,
+.input-name:focus,
+.input-email:focus,
+.input-question:focus {
   border: 2px solid #2d3440;
 }
 
@@ -388,7 +394,10 @@ body {
 .field:disabled,
 .delivery-date-input:disabled,
 .delivery-phone-input:disabled,
-.delivery-address-input:disabled {
+.delivery-address-input:disabled,
+.input-name:disabled,
+.input-email:disabled,
+.input-question:disabled {
   border: 1px solid #b9b9b9;
   background-color: #e7e7e7;
 }
@@ -1510,4 +1519,96 @@ body {
   bottom: -1px;
   background-color: #2d3440;
   opacity: 0.5;
+}
+
+/*---Модальное окно---*/
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 52, 64, 0.3);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background-color: #fcfcfc;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.feedback {
+  width: 570px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-title {
+  padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.modal-form-item {
+  padding-bottom: 16px;
+}
+
+.modal-lable-input {
+  width: 442px;
+  height: 48px;
+  padding: 14px 16px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  color: #b9b9b9;
+}
+
+.modal-lable-input::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.input-question {
+  height: 149px;
+  resize: none;
+}
+
+.modal-button {
+  margin-top: 16px;
+}
+
+/*---Страница каталога---*/
+
+.main-inner {
+  flex-grow: 1;
 }
