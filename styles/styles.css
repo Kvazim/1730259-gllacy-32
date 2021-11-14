@@ -350,13 +350,20 @@ body {
 
 .search-form:hover,
 .auth-form-field:hover,
-.field:hover {
+.field:hover,
+.delivery-date-input:hover,
+.delivery-phone-input:hover,
+.delivery-address-input:hover {
   border: 1px solid #2d3440;
+  cursor: pointer;
 }
 
 .search-form:focus,
 .auth-form-field:focus,
-.field:focus {
+.field:focus,
+.delivery-date-input:focus,
+.delivery-phone-input:focus,
+.delivery-address-input:focus {
   border: 2px solid #2d3440;
 }
 
@@ -370,7 +377,10 @@ body {
 
 .search-form:disabled,
 .auth-form-field:disabled,
-.field:disabled {
+.field:disabled,
+.delivery-date-input:disabled,
+.delivery-phone-input:disabled,
+.delivery-address-input:disabled {
   border: 1px solid #b9b9b9;
   background-color: #e7e7e7;
 }
@@ -823,7 +833,7 @@ body {
 }
 
 .marshmallow {
-  grid-template: 2/3;
+  grid-column: 2/3;
 }
 
 .special-item {
@@ -1128,6 +1138,7 @@ body {
   padding: 64px;
   background-image: url("../images/delivery.jpg");
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .delivery-text {
@@ -1231,6 +1242,7 @@ body {
 .delivery-date-input,
 .delivery-phone-input,
 .delivery-address-input {
+  margin-top: 8px;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -1238,5 +1250,7 @@ body {
 }
 
 .delivery-button {
-  margin-top: 44px;
+  grid-column: 1/-1;
+  margin-top: 32px;
+  justify-self: center;
 }
