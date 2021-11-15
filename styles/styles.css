@@ -336,6 +336,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 4px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .search-form {
@@ -344,7 +345,8 @@ body {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 16px;
-  border: 1px solid #b9b9b9;
+  outline: 1px solid #b9b9b9;
+  border: none;
   border-radius: 4px;
   box-sizing: border-box;
   font-family: "Inter", "Arial", sans-serif;
@@ -363,7 +365,7 @@ body {
 .input-name:hover,
 .input-email:hover,
 .input-question:hover {
-  border: 1px solid #2d3440;
+  outline: 1px solid #2d3440;
   cursor: pointer;
 }
 
@@ -376,15 +378,15 @@ body {
 .input-name:focus,
 .input-email:focus,
 .input-question:focus {
-  border: 2px solid #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .error:invalid {
-  border: 1px solid #ea5454;
+  outline: 1px solid #ea5454;
 }
 
 .error:focus:invalid {
-  border: 2px solid #ea5454;
+  outline: 2px solid #ea5454;
 }
 
 .search-form:disabled,
@@ -396,7 +398,7 @@ body {
 .input-name:disabled,
 .input-email:disabled,
 .input-question:disabled {
-  border: 1px solid #b9b9b9;
+  outline: 1px solid #b9b9b9;
   background-color: #e7e7e7;
 }
 
@@ -443,6 +445,7 @@ body {
   right: 0;
   background-color: #fcfcfc;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .popup-autр-activ {
