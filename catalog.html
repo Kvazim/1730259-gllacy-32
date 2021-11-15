@@ -112,17 +112,50 @@
           </li>
           <li class="user-nav-item basket">
             <a class="user-nav-link basket-link" href="#">
-              <svg class="basket-img empty" aria-hidden="true" focusable="false" width="18" height="18"
+              <svg class="basket-img" aria-hidden="true" focusable="false" width="18" height="18"
                 viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M1.3 1.5a.7.7 0 0 0 0 1.3h2L4 5.5 5 11a2 2 0 0 0 2 1.6h6.3a2 2 0 0 0 2-1.6l1-5.5a.7.7 0 0 0-.6-.8H5L4.6 2c0-.3-.4-.5-.7-.5H1.3Zm5 9.3L5.3 6h9.5l-.8 4.7a.6.6 0 0 1-.7.5H7a.6.6 0 0 1-.7-.5Zm-1 4.4a1.3 1.3 0 1 1 2.5 0 1.3 1.3 0 0 1-2.6 0Zm7 0a1.3 1.3 0 1 1 2.7 0 1.3 1.3 0 0 1-2.6 0Z" />
               </svg>
-              <span>Пусто</span><span class="visually-hidden">Корзина
+              <span>2 товара</span><span class="visually-hidden">Корзина
                 товаров</span></a>
             <!--Для открытия добавить клас popup-basket-activ-->
             <div class="popup-basket">
               <div class="popup-basket-content">
-                <h3 class="basket-title">Ваша корзина пока пуста</h3>
+                <button class="popup-basket-button visually-hidden" tabindex="-1">Закрыть</button>
+                <h3 class="basket-title">Корзина</h3>
+                <ul class="basket-list">
+                  <li class="basket-item">
+                    <a href="#">
+                      <img class="basket-item-img" src="" alt="фото малинового мороженого.">
+                    </a>
+                    <a href="#">
+                      <h6 class="basket-item-title">Малинка</h6>
+                    </a>
+                    <p class="basket-item-subtitle">1 кг х 310 ₽</p>
+                    <p class="basket-item-price"><strong>310 ₽</strong></p>
+                    <button class="basket-button-remove">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="basket-item">
+                    <a href="#">
+                      <img class="basket-item-img" src="" alt="фото ванильного мороженого с сладкой посыпкой.">
+                    </a>
+                    <a href="#">
+                      <h6 class="basket-item-title">Бабл-гам</h6>
+                    </a>
+                    <p class="basket-item-subtitle">1,5 кг х 320 ₽</p>
+                    <p class="basket-item-price"><strong>480 ₽</strong></p>
+                    <button class="basket-button-remove">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="order-group">
+                  <a class="button button-red" href="#">Оформить заказ</a>
+                  <span class="total-price"><strong>Итого: 790 ₽</strong></span>
+                </div>
               </div>
             </div>
           </li>
