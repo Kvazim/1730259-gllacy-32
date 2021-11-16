@@ -976,7 +976,7 @@ body {
   padding: 19px 7px 0 40px;
   background-image: url("../images/substrate.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   border-radius: 16px;
   box-sizing: border-box;
 }
@@ -1133,6 +1133,7 @@ body {
   padding: 24px;
   background-image: url("../images/wafer.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   box-sizing: border-box;
 }
@@ -1216,6 +1217,9 @@ body {
   padding-top: 32px;
   background-image: url("../images/blog.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: inherit;
+  background-size: cover;
   border-radius: 16px;
   box-sizing: border-box;
 }
@@ -1247,6 +1251,7 @@ body {
   padding: 6px;
   background-image: url("../images/newsletter.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   box-sizing: border-box;
 }
@@ -1300,6 +1305,9 @@ body {
   padding: 64px;
   background-image: url("../images/delivery.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: inherit;
+  background-size: cover;
   border-radius: 16px;
   box-sizing: border-box;
 }
@@ -1480,6 +1488,9 @@ body {
   width: 1170px;
   background-image: url("../images/contacts-background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: inherit;
+  background-size: cover;
   border-radius: 16px;
   min-height: 492px;
   object-fit: contain;
@@ -1991,18 +2002,9 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 16px;
 }
 
-.radio-off {
-  display: none;
-}
-
-.radio-on {
-  display: none;
-}
-
-.check-off {
-  display: none;
-}
-
+.radio-off,
+.radio-on,
+.check-off,
 .check-on {
   display: none;
 }
