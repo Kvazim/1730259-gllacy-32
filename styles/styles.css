@@ -1798,6 +1798,32 @@ input[type="number"]::-webkit-inner-spin-button {
   right: 0;
 }
 
+.range-toggle:hover {
+  background-color: #fcfcfc;
+}
+
+.range-toggle:hover .circle {
+  fill: #2d3440;
+}
+
+.range-toggle:focus {
+  background-color: #fcfcfc;
+  outline: 2px solid #2d3440;
+}
+
+.range-toggle:focus .circle {
+  fill: #2d3440;
+}
+
+.range-toggle:active {
+  background-color: #2d3440;
+  outline: none;
+}
+
+.range-toggle:active .circle {
+  fill: #2d3440;
+}
+
 .radio-wrapper {
   width: 367px;
   height: 36px;
@@ -1882,6 +1908,8 @@ input[type="number"]::-webkit-inner-spin-button {
   background-repeat: no-repeat;
 }
 
+/*---dop-knopka---*/
+
 .filters-button {
   width: 187px;
   height: 36px;
@@ -1896,8 +1924,51 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 20px;
 }
 
+.filters-button:hover {
+  background-color: #fcfcfc;
+  outline-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
+}
+
+.filters-button:focus {
+  outline-color: #2d3440;
+}
+
+.filters-button:disabled {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline-color: rgba(252, 252, 252, 0.4)
+
+}
+
+/*---pagination---*/
+
 .pagination {
   display: flex;
   margin-top: 57px;
 }
 
+.pagination-list {
+  display: flex;
+  margin-top: 11px;
+}
+
+.pagination-link {
+  padding: 2px 8px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.pagination-link-current {
+  background-color: #fcfcfc;
+}
+
+.pagination-link:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #fcfcfc;
+}
+
+.pagination-link:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2d3440;
+}
