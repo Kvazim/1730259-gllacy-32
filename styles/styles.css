@@ -1945,6 +1945,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination {
   display: flex;
   margin-top: 57px;
+  justify-content: flex-end;
+}
+
+.pagination-show-more {
+  margin-right: 305px;
 }
 
 .pagination-list {
