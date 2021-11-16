@@ -958,6 +958,11 @@ body {
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
+.link-title {
+  text-decoration: none;
+  color: #2d3440;
+}
+
 .card-item-title {
   margin-top: 133px;
   margin-bottom: 8px;
@@ -1733,6 +1738,16 @@ body {
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 13px center;
+}
+
+.select-control:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  cursor: pointer;
+}
+
+.select-control:focus {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 2px solid #fcfcfc;
 }
 
 .catalog-filters-input {
