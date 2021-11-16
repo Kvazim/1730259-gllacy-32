@@ -590,6 +590,10 @@ body {
   box-sizing: border-box;
 }
 
+.basket-catalog {
+  width: 441px;
+}
+
 .basket-title {
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
@@ -1897,18 +1901,37 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .control-input[type="radio"]:not(:checked) + .control-mark .radio-off {
   display: block;
+  fill: #2D3440;
 }
 
 .control-input[type="radio"]:checked + .control-mark .radio-on {
   display: block;
+  fill: #2D3440;
 }
 
 .control-input[type="checkbox"]:not(:checked) + .control-mark .check-off {
   display: block;
+  fill: #2D3440;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark .check-on {
   display: block;
+  fill: #2D3440;
+}
+
+.control-input[type="radio"]:not(:checked):hover + .control-mark .radio-off,
+.control-input[type="radio"]:checked:hover + .control-mark .radio-on,
+.control-input[type="checkbox"]:not(:checked):hover + .control-mark .check-off,
+.control-input[type="checkbox"]:checked:hover + .control-mark .check-on {
+  fill: #fcfcfc;
+  cursor:pointer;
+}
+
+.control-input[type="radio"]:not(:checked):disabled + .control-mark .radio-off,
+.control-input[type="radio"]:checked:disabled + .control-mark .radio-on,
+.control-input[type="checkbox"]:not(:checked):disabled + .control-mark .check-off,
+.control-input[type="checkbox"]:checked:disabled + .control-mark .check-on {
+  opacity: 0.4;
 }
 
 /*---dop-knopka---*/
