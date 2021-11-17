@@ -94,6 +94,8 @@ body {
 /*---main-nav---*/
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
   align-items: center;
 }
 
@@ -211,6 +213,8 @@ body {
 
 .user-nav {
   display: flex;
+  max-width: 420px;
+  flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
   font-size: 14px;
@@ -862,7 +866,9 @@ body {
 }
 
 .social {
-  display: flex;
+  display: grid;
+  grid-template-columns: 24px 24px 24px;
+  gap: 16px;
 }
 
 .slider-social {
@@ -883,10 +889,6 @@ body {
   width: 24px;
   height: 24px;
   fill: #fcfcfc;
-}
-
-.social-item:not(:last-child) {
-  margin-right: 16px;
 }
 
 /*---Состояние slider---*/
@@ -963,14 +965,6 @@ body {
   gap: 30px;
 }
 
-.raspberry {
-  grid-column: 1/2;
-}
-
-.marshmallow {
-  grid-column: 2/3;
-}
-
 .special-item {
   display: flex;
   justify-content: space-between;
@@ -1027,10 +1021,7 @@ body {
 .card-list {
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
-  gap: 30px;
-}
-
-.catalog .card-list {
+  column-gap: 30px;
   row-gap: 91px;
 }
 
@@ -1207,9 +1198,9 @@ body {
 /*---блог рассылка---*/
 
 .foryou {
-  display: flex;
-  justify-content: space-between;
-  width: 1170px;
+  display: grid;
+  grid-template-columns: 570px 570px;
+  gap: 32px;
 }
 
 .blog {
@@ -1569,7 +1560,7 @@ body {
   padding-bottom: 48px;
 }
 
-.page-footer::before {
+.page-footer-catalog::before {
   content: "";
   position: absolute;
   display: block;
