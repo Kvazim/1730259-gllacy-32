@@ -969,7 +969,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 570px;
-  padding: 19px 7px 0 40px;
+  padding: 18px 7px 0 40px;
   background-image: url("../images/substrate.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -984,7 +984,7 @@ body {
 
 .special-item-text {
 
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 .special-item-title {
@@ -1039,7 +1039,7 @@ body {
 .card-item-image {
   display: block;
   position: absolute;
-  top: -51px;
+  top: -50px;
   left: 51px;
   width: 168px;
   height: 168px;
@@ -1133,7 +1133,7 @@ body {
 
 .advantages-wrapper {
   width: 1122px;
-  padding: 56px 40px 16px;
+  padding: 58px 40px 16px;
   text-align: center;
   background-color: #fcfcfc;
   border-radius: 16px;
@@ -1200,7 +1200,7 @@ body {
 .foryou {
   display: grid;
   grid-template-columns: 570px 570px;
-  gap: 32px;
+  gap: 30px;
 }
 
 .blog {
@@ -1495,7 +1495,7 @@ body {
   margin-left: 64px;
   padding-top: 40px;
   padding-left: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   background-color: #fcfcfc;
   box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
   border-radius: 8px;
@@ -1556,7 +1556,7 @@ body {
 .page-footer {
   display: flex;
   position: relative;
-  padding-top: 41px;
+  padding-top: 40px;
   padding-bottom: 48px;
 }
 
@@ -1798,7 +1798,7 @@ body {
 /*---filters---*/
 
 .filters {
-  margin-bottom: 84px;
+  margin-bottom: 82px;
 }
 
 .filters-title {
@@ -1816,7 +1816,7 @@ body {
 
 .catalog-filters-list {
   margin-right: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   border: none;
   font-family: inherit;
   font-weight: 400;
@@ -2067,12 +2067,11 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: flex-end;
 }
 
-.pagination-show-more {
-  margin-right: 305px;
-}
-
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 500px;
   margin-top: 11px;
 }
 
