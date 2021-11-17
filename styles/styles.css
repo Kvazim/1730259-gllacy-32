@@ -213,7 +213,7 @@ body {
 
 .user-nav {
   display: flex;
-  max-width: 420px;
+  max-width: 440px;
   flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
