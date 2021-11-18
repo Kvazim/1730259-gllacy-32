@@ -1039,11 +1039,15 @@ body {
   box-sizing: border-box;
 }
 
+.link-image {
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  left: 51px;
+}
+
 .card-item-image {
   display: block;
-  position: absolute;
-  top: -51px;
-  left: 51px;
   width: 168px;
   height: 168px;
   border-radius: 50%;
@@ -1051,13 +1055,16 @@ body {
 }
 
 .link-title {
+  display: inline-block;
+  margin-top: 134px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-decoration: none;
   color: #2d3440;
 }
 
 .card-item-title {
-  margin-top: 133px;
-  margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1120,6 +1127,30 @@ body {
 
 .card-item-button:disabled .basket-img {
   fill: #565c66;
+}
+
+.link-image:hover {
+  opacity: 0.7;
+}
+
+.link-title:hover {
+  opacity: 0.7;
+}
+
+.link-title:focus {
+  outline: 2px solid #2d3440;
+  outline-offset: inherit;
+  border-radius: 26px;
+}
+
+.link-image:focus {
+  outline: 2px solid #2d3440;
+  border-radius: 50%;
+}
+
+.link-image:active,
+.link-title:active {
+  opacity: 0.3;
 }
 
 /*---Преимущества---*/
