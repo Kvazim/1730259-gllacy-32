@@ -213,7 +213,7 @@ body {
 
 .user-nav {
   display: flex;
-  max-width: 440px;
+  max-width: 460px;
   flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
@@ -226,6 +226,7 @@ body {
   margin-right: 16px;
 }
 
+.user-nav-item:first-child,
 .user-nav-item:last-child {
   margin-right: 0;
 }
@@ -254,6 +255,7 @@ body {
 
 .link-phone {
   margin-right: 3px;
+  padding: 8px 16px;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
@@ -859,6 +861,7 @@ body {
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
   border: none;
+  outline: none;
 }
 
 .slider-pagination-button-current {
@@ -1039,7 +1042,7 @@ body {
 .card-item-image {
   display: block;
   position: absolute;
-  top: -50px;
+  top: -51px;
   left: 51px;
   width: 168px;
   height: 168px;
@@ -1577,7 +1580,7 @@ body {
 }
 
 .footer-info {
-  margin-top: 6px;
+  margin-top: 7px;
   margin-left: 315px;
 }
 
@@ -1622,7 +1625,7 @@ body {
 }
 
 .copyright {
-  margin-top: 8px;
+  margin-top: 9px;
   margin-left: auto;
   margin-right: 14px;
 }
@@ -1750,27 +1753,28 @@ body {
   display: flex;
   margin-top: 30px;
   margin-bottom: 17px;
+  margin-left: -8px;
 }
 
 .breadcrumbs-item {
   display: inline-block;
   position: relative;
-  max-width: 80px;
+  max-width: 100px;
   padding-right: 1px;
 }
 
 .breadcrumbs-item:not(:first-child) {
-  margin-left: 28px;
+  margin-left: 12px;
 }
 
 .breadcrumbs-item:not(:last-child)::before {
   content: "";
   display: block;
   position: absolute;
-  width: 100%;
   height: 1px;
   background-color: #2d3440;
-  left: 0;
+  left: 8px;
+  right: 8px;
   bottom: 0;
 }
 
@@ -1783,16 +1787,33 @@ body {
   background-image: url("../images/chevrons-right.svg");
   background-repeat: no-repeat;
   top: 6px;
-  right: -20px;
+  right: -12px;
 }
 
 .breadcrumbs-link {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 13px;
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.breadcrumbs-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2d3440;
+  outline-offset: inherit;
+}
+
+.breadcrumbs-link:active {
+  background-color: #fcfcfc;
 }
 
 /*---filters---*/
@@ -1867,9 +1888,21 @@ body {
 }
 
 .catalog-filters-input {
-  width: 30px;
+  width: 22px;
+  margin-left: -3px;
+  padding: 2px 4px;
   border: none;
+  border-radius: 26px;
   background-color: transparent;
+}
+
+.catalog-filters-input:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog-filters-input:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2d3440;
 }
 
 input[type="number"] {
@@ -1913,8 +1946,10 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 16px;
   top: -8px;
   border: none;
+  outline: none;
   border-radius: 50%;
   background-color: #2d3440;
+  overflow: hidden;
 }
 
 .circle {
@@ -2020,6 +2055,18 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+.control-input[type="radio"]:focus + .control-mark .radio-off,
+.control-input[type="radio"]:focus + .control-mark .radio-on {
+  outline: 2px solid #fcfcfc;
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark .check-off,
+.control-input[type="checkbox"]:focus + .control-mark .check-on {
+  outline: 2px solid #fcfcfc;
+  border-radius: 2px;
+}
+
 .control-input[type="radio"]:disabled + .control-mark .radio-off,
 .control-input[type="radio"]:disabled + .control-mark .radio-on,
 .control-input[type="checkbox"]:disabled + .control-mark .check-off,
@@ -2085,9 +2132,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .pagination-arrow {
-  border: none;
-  background-color: transparent;
+  width: 24px;
+  height: 24px;
   padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
   outline: none;
 }
 
@@ -2096,16 +2146,17 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .pagination-next {
-  margin-left: 22px;
-  margin-right: 3px;
+  margin-left: 13px;
+  margin-right: -5px;
 }
 
 .pagination-prew {
-  margin-right: 19px;
+  margin-right: 11px;
 }
 
 .pagination-arrow svg {
   display: block;
+  margin: auto;
   fill: #2d3440;
 }
 
